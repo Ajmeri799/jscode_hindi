@@ -1,0 +1,49 @@
+//singleton
+//object literals
+
+const mysym=Symbol("key1")
+const MyObject={
+[mysym]:"mykey",
+    name:"ajmeri",
+    age: 20,
+    location :"allhabad",
+    email:"xwwr@gmail.com",
+"FullName":"AjmeriGuniya"
+
+
+}
+console.log(MyObject)
+console.log(MyObject.name)
+console.log(MyObject["name"])
+
+//worng syntax
+//console.log(MyObject.FullName)
+
+console.log(MyObject["FullName"])
+console.log(MyObject[mysym])
+
+
+console.log(MyObject["email"])
+MyObject.email="ajme@gmail.com"
+console.log(MyObject["email"])
+//Object.freeze(MyObject)
+MyObject.email="joye@gmail.com"
+console.log(MyObject["email"])
+console.log(MyObject)
+//fuction
+
+MyObject.greeting=function(){
+    console.log("hello user")
+}
+// console.log(MyObject.greeting)
+console.log(MyObject.greeting())
+
+MyObject.greetingTwo=function(){
+    console.log(`hello user,${this.name}`)
+}
+console.log(MyObject.greetingTwo())
+
+
+
+
+
