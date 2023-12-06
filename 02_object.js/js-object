@@ -42,6 +42,44 @@ MyObject.greetingTwo=function(){
     console.log(`hello user,${this.name}`)
 }
 console.log(MyObject.greetingTwo())
+const user=[
+    
+    {
+        id:"124asd",
+        name:"Ajmeri"
+    },
+    {
+        id:"dsa344",
+    name:"Guniya"
+    },
+    
+    {
+        id:"eih589",
+        name:"laveena"
+    }
+    ]
+    
+    const Tinderid={
+        name:"ajmeri",
+        rollno:2,
+        email:"ajmeri@gmail.com"
+    }
+console.log(user)
+console.log(user[0].id)
+
+// for tinder user
+console.log(Object.keys(Tinderid))
+// it is store keys in array
+console.log(Object.values(Tinderid))
+//  it is store value in array
+
+console.log(Object.entries(Tinderid))
+// it is store all entries in a array
+console.log(Object.hasOwnProperty("issloged"))
+
+
+// -----------------------object2--------------------------
+
 
 
 
