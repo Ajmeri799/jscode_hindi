@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    <h1 onclick="alert('ok')">
+    Lorem ipsum dolor sit consectetur adipisicing elit. 
+    </h1>
+    <h1 id="clicks">
+        Lorem ipsum dolor sit amet.
+    </h1>  
+<ul id="ulid">
+<li id="li1">HELLO</li>
+<li id="li2">hello</li>
+<li id="li3">Hello</li>
+<li id="google"><a href="https://www.google.com/">Google</a></li>
+</ul>
+
+
+</body>
+<script>
+    // document.getElementById('clicks').onclick=function(){
+    //     alert("clicked")
+    // }
+ //attchEvent()
+//jQuery-on
+//type ,timestamp, 
+
+
+document.getElementById('clicks').addEventListener( 'click',function(){
+    alert("clicked ones")
+})
+
+// -------------------------  False , Bubble aproach Down to Top  --------------------------
+
+// document.getElementById('ulid').addEventListener( 'click',function(){
+//     // alert("clicked ul")
+//     console.log("clicked ul")
+// },false)
+// document.getElementById('li2').addEventListener( 'click',function(){
+//     // alert("clicked li")
+//     console.log("clicked li")
+// },false)
+
+
+// -----------------------------  True , Bubble Aproach Top to Down  ------------------------
+
+// document.getElementById('ulid').addEventListener( 'click',function(e){
+//     // alert("clicked ul")
+//     console.log("clicked ul")
+// },true)
+// document.getElementById('li2').addEventListener( 'click',function(e){
+//     // alert("clicked li")
+//     console.log("clicked li")
+// },true)
+
+//------------------------- stopPropagation stop bubble -----------------------------
+// document.getElementById('ulid').addEventListener( 'click',function(e){
+// //     // alert("clicked ul")
+//      console.log("clicked ul")
+// },false)
+// //when false
+// document.getElementById('li2').addEventListener( 'click',function(e){
+//     // alert("clicked li")
+
+//     console.log("clicked li")
+//     e.stopPropagation()
+// },false)
+
+
+
+//when false
+ document.getElementById('google').addEventListener( 'click',function(e){
+    // alert("clicked li")
+     e.preventDefault()
+     console.log("clicked li")
+
+ },false)
+
+</script>
+</html>
