@@ -27,12 +27,12 @@ function user(username,logincount,islogIn){
  this.islogIn=islogIn;
  return this
 }
-//return copy right vaue
-// const user1=user("Ajmeri",8,true);
-// const user2=user("Sania",9,true);
-// console.log(user1);
-//new is used as a constructor
-const user1= new user("Ajmeri",8,true);
-const user2= new user("Sania",9,true);
-console.log(user2);
+// return copy right vaue
+const user1=user("Ajmeri",8,true);
+const user2=user("Sania",9,true);
 console.log(user1);
+//new is used as a constructor
+// const user1= new user("Ajmeri",8,true);
+// const user2= new user("Sania",9,true);
+// console.log(user2);
+// console.log(user1);
